@@ -75,6 +75,14 @@ while carryOn:
             if event.key == pygame.K_x:
                 carryOn = False
 
+        if event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE:
+            while (
+                True
+            ):  # Infinite loop that will be broken when the user press the space bar again
+                event = pygame.event.wait()
+                if event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE:
+                    break  # Exit infinite loop
+
     # Moving the paddle when the use uses the arrow keys
     keys = pygame.key.get_pressed()
     if keys[pygame.K_LEFT]:
