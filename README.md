@@ -1,3 +1,3 @@
 # brickbreaker
 
-## nranch it and go crazy
+## Branch it and go crazy
